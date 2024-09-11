@@ -10,29 +10,29 @@
 
 enum class LoadReason : size_t
 {
-		NONE,
-		NEW_GAME,
-		LOAD_SAVE,
-		WORLD_CHANGE
+	NONE,
+	NEW_GAME,
+	LOAD_SAVE,
+	WORLD_CHANGE
 };
 
 struct TGameSaveLoadInfo
 {
-		int Slot;
-		LoadReason Reason;
+	int Slot;
+	LoadReason Reason;
 
-		static ::Union::StringANSI GetSaveSlotName(int id)
+	static ::Union::StringANSI GetSaveSlotName(int id)
+	{
+		if (id > 0)
 		{
-				if (id > 0)
-				{
-						return "savegame" + id;
-				}
-				if (id == 0)
-				{
-						return "quicksave";
-				}
-				return "current";
+			return "savegame" + id;
 		}
+		if (id == 0)
+		{
+			return "quicksave";
+		}
+		return "current";
+	}
 } slInfo;
 
 #ifdef __G1
