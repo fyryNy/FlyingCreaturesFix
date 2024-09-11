@@ -122,107 +122,45 @@ namespace GOTHIC_NAMESPACE
 		}
 		auto PartialHook_zCCollObjectCharacter_TestHardCollisions_Abyss = ::Union::CreatePartialHook(reinterpret_cast<void*>(AbyssAddr), &zCCollObjectCharacter_TestHardCollisions_Abyss);
 
-		void Game_Entry()
-		{
-				//GAME ENTRY
-		}
+		void Game_Entry() {}
 
-		void Game_Init()
-		{
-				//GAME INIT
-		}
+		void Game_Init() {}
 
-		void Game_ApplyOptions()
-		{
-				//GAME APPLY OPTIONS
-		}
+		void Game_ApplyOptions() {}
 
-		void Game_PreLoop()
-		{
-				//GAME PRE LOOP
-		}
+		void Game_PreLoop() {}
 
-		void Game_Loop()
-		{
-				//GAME LOOP
-		}
+		void Game_Loop() {}
 
-		void Game_PostLoop()
-		{
-				//GAME POST LOOP
-		}
+		void Game_PostLoop() {}
 
-		void Game_MenuLoop()
-		{
-				//GAME MENU LOOP
-		}
+		void Game_MenuLoop() {}
 
-		void Game_Exit()
-		{
-				//GAME EXIT
-		}
+		void Game_Exit() {}
 
-		void Game_Pause()
-		{
-				//GAME PAUSE
-		}
+		void Game_Pause() {}
 
-		void Game_Unpause()
-		{
-				//GAME UNPAUSE
-		}
+		void Game_Unpause() {}
 
-		void Game_SaveBegin()
-		{
-				//GAME SAVE BEGIN
-		}
+		void Game_SaveBegin() {}
 
-		void Game_SaveEnd()
-		{
-				//GAME SAVE END
-		}
+		void Game_SaveEnd() {}
 
-		void Game_LoadBegin_NewGame()
-		{
-				//GAME LOAD BEGIN NEW GAME
-		}
+		void Game_LoadBegin_NewGame() {}
 
-		void Game_LoadEnd_NewGame()
-		{
-				//GAME LOAD END NEW GAME
-		}
+		void Game_LoadEnd_NewGame() {}
 
-		void Game_LoadBegin_SaveGame()
-		{
-				//GAME LOAD BEGIN SAVE GAME
-		}
+		void Game_LoadBegin_SaveGame() {}
 
-		void Game_LoadEnd_SaveGame()
-		{
-				//GAME LOAD END SAVE GAME
-		}
+		void Game_LoadEnd_SaveGame() {}
 
-		void Game_LoadBegin_ChangeLevel()
-		{
-				//GAME LOAD BEGIN CHANGE LEVEL
-		}
-		void Game_LoadEnd_ChangeLevel()
-		{
-				//GAME LOAD END CHANGE LEVEL
-		}
+		void Game_LoadBegin_ChangeLevel() {}
 
-		void Game_LoadBegin_Trigger()
-		{
-				//GAME LOAD BEGIN TRIGGER
-		}
+		void Game_LoadEnd_ChangeLevel() {}
 
-		void Game_LoadEnd_Trigger()
-		{
-				//GAME LOAD END TRIGGER
-		}
+		void Game_LoadBegin_Trigger() {}
 
-		void Game_DefineExternals()
-		{
-				//GAME DEFINE EXTERNALS
-		}
+		void Game_LoadEnd_Trigger() {}
+
+		void Game_DefineExternals() {}
 }

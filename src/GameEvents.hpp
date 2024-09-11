@@ -1,5 +1,6 @@
 namespace GOTHIC_NAMESPACE
 {
+	/*
 		class oCPluginPerFrameCallback : public zCWorldPerFrameCallback
 		{
 				virtual void DoWorldPerFrameCallback(zCWorld* world, zCCamera* cam)
@@ -179,4 +180,5 @@ namespace GOTHIC_NAMESPACE
 				slInfo.Slot = slotId;
 		}
 		auto PartialHook_GetLastLoadSlot = ::Union::CreatePartialHook((void*)(zSwitch(0x00428B77, 0x0042AFDD, 0x00429D48, 0x0042A068)), &GetLastLoadSlot);
+	*/
 }
