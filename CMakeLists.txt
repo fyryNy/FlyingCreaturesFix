@@ -6,13 +6,13 @@ include(target_add_versioninfo)
 
 project(FlyingCreaturesFix
 	DESCRIPTION "Union plugin that fixes flying creatures"
-	VERSION 1.0.0.0
+	VERSION 1.1.0.0
 )
 
-set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-file(GLOB_RECURSE SRC 
+file(GLOB_RECURSE SRC
     "src/*.cpp"
 )
 
@@ -24,6 +24,7 @@ target_include_directories(${CMAKE_PROJECT_NAME}
 		"include/"
 
 	PRIVATE
+		BEFORE "userapi/"
 		"src/"
 )
 

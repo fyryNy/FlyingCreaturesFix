@@ -1,0 +1,1 @@
+int IsFlyingCreature_Union();
