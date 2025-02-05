@@ -6,7 +6,7 @@ include(target_add_versioninfo)
 
 project(FlyingCreaturesFix
 	DESCRIPTION "Union plugin that fixes flying creatures"
-	VERSION 1.1.0.0
+	VERSION 1.2.0.0
 )
 
 set(CMAKE_CXX_STANDARD 17)

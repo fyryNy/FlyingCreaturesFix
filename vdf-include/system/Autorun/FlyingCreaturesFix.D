@@ -165,28 +165,90 @@ instance MenuItem_Opt_FlyingCreaturesFix_Headline(C_MENU_ITEM)
   MenuItem_Opt_Headline();
 };
 
-instance MenuItem_Opt_FlyingCreaturesFix_EdgesFixAffectAllNpcs(C_MENU_ITEM)
+instance MenuItem_Opt_FlyingCreaturesFix_EdgesFixAffectPlayer(C_MENU_ITEM)
 {
   CurrentMenuItem_PY = 1;
   C_MENU_ITEM_TEXT_BASE();
   fontname = FontSmall;
   posy += Menu_DY * CurrentMenuItem_PY + Text_DY;
   
-  text[0] = "EdgesFixAffectAllNpcs";
+  text[0] = "EdgesFixAffectPlayer";
   text[1] = Str_GetLocalizedString(
-    "Следует ли предотвратить падение всех NPC с уступов или скал?",
-    "Should all NPCs be prevented from falling off edges or cliffs?",
-    "Sollten alle NPCs daran gehindert werden, von Kanten oder Klippen zu fallen?",
-    "Czy wszystkie NPC powinny być powstrzymane przed spadaniem z krawędzi lub klifów?"
+    "Перестаньте предотвращать падение игрока с уступов или скал (ходьба/скрытность).",
+    "Stop preventing the player from falling off edges or cliffs (walk/sneak).",
+    "Hör auf, den Spieler daran zu hindern, von Kanten oder Klippen zu fallen (Gehen/Schleichen).",
+    "Przestań zapobiegać upadkowi gracza z krawędzi lub klifów (chód/skradanie)."
   );
 };
 
-instance MenuItem_Opt_FlyingCreaturesFix_EdgesFixAffectAllNpcs_Choice(C_MENU_ITEM_DEF)
+instance MenuItem_Opt_FlyingCreaturesFix_EdgesFixAffectPlayer_Choice(C_MENU_ITEM_DEF)
 {
   C_MENUITEM_CHOICE_BASE();
   posy += Menu_DY * CurrentMenuItem_PY;
   
-  onchgsetoption        = "EdgesFixAffectAllNpcs";
+  onchgsetoption        = "EdgesFixAffectPlayer";
+  onchgsetoptionsection = "FlyingCreaturesFix";
+  text[0]               = Str_GetLocalizedString(
+    "Выкл.|Вкл.",
+    "Off|On",
+    "Aus|Ein",
+    "Wył.|Wł."
+  );
+};
+
+instance MenuItem_Opt_FlyingCreaturesFix_EdgesFixAffectHumans(C_MENU_ITEM)
+{
+  CurrentMenuItem_PY = 2;
+  C_MENU_ITEM_TEXT_BASE();
+  fontname = FontSmall;
+  posy += Menu_DY * CurrentMenuItem_PY + Text_DY;
+  
+  text[0] = "EdgesFixAffectHumans";
+  text[1] = Str_GetLocalizedString(
+    "Перестаньте предотвращать падение людей с уступов или скал.",
+    "Stop preventing humans from falling off edges or cliffs.",
+    "Hör auf, Menschen daran zu hindern, von Kanten oder Klippen zu fallen.",
+    "Przestań zapobiegać upadkowi ludzi z krawędzi lub klifów."
+  );
+};
+
+instance MenuItem_Opt_FlyingCreaturesFix_EdgesFixAffectHumans_Choice(C_MENU_ITEM_DEF)
+{
+  C_MENUITEM_CHOICE_BASE();
+  posy += Menu_DY * CurrentMenuItem_PY;
+  
+  onchgsetoption        = "EdgesFixAffectHumans";
+  onchgsetoptionsection = "FlyingCreaturesFix";
+  text[0]               = Str_GetLocalizedString(
+    "Выкл.|Вкл.",
+    "Off|On",
+    "Aus|Ein",
+    "Wył.|Wł."
+  );
+};
+
+instance MenuItem_Opt_FlyingCreaturesFix_EdgesFixAffectOtherMonsters(C_MENU_ITEM)
+{
+  CurrentMenuItem_PY = 3;
+  C_MENU_ITEM_TEXT_BASE();
+  fontname = FontSmall;
+  posy += Menu_DY * CurrentMenuItem_PY + Text_DY;
+  
+  text[0] = "EdgesFixAffectOtherMonsters";
+  text[1] = Str_GetLocalizedString(
+    "Перестаньте предотвращать падение других монстров с уступов или скал.",
+    "Stop preventing other monsters from falling off edges or cliffs.",
+    "Hör auf, andere Monster daran zu hindern, von Kanten oder Klippen zu fallen.",
+    "Przestań zapobiegać upadkowi innych potworów z krawędzi lub klifów."
+  );
+};
+
+instance MenuItem_Opt_FlyingCreaturesFix_EdgesFixAffectOtherMonsters_Choice(C_MENU_ITEM_DEF)
+{
+  C_MENUITEM_CHOICE_BASE();
+  posy += Menu_DY * CurrentMenuItem_PY;
+  
+  onchgsetoption        = "EdgesFixAffectOtherMonsters";
   onchgsetoptionsection = "FlyingCreaturesFix";
   text[0]               = Str_GetLocalizedString(
     "Выкл.|Вкл.",
