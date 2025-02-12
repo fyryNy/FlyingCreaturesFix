@@ -1,3 +1,6 @@
+[1.3.1]
+- Fix addresses for g2/g2a ApplySomeSettings partialhook
+
 [1.3.0]
 - Switched back to PartialHooks for `Game_ApplySettings`  
 - Switched HookType for `zCAIPlayer::CheckPhysics` hook to `Hook_Detours` to assert compatibility with Union 1.0m plugins  
