@@ -6,3 +6,5 @@
 # Build directories
 
 /out/
+
+*.vdf

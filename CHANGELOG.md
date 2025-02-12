@@ -1,3 +1,8 @@
+[1.3.0]
+- Switched back to PartialHooks for `Game_ApplySettings`  
+- Switched HookType for `zCAIPlayer::CheckPhysics` hook to `Hook_Detours` to assert compatibility with Union 1.0m plugins  
+- Removed unused hooks and empty funcs  
+
 [1.2.0]
 - Updated gothic-api to fix some crashes  
 - Change Hooktype from Hook_Detours to Hook_Auto to prevent crashes in CoM and/or possibly any other Ikarus/Lego mods  
