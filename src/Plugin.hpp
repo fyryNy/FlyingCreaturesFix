@@ -205,5 +205,5 @@ namespace GOTHIC_NAMESPACE
 	{
 		Game_ApplySettings();
 	}
-	auto PartialHook_Game_ApplyOptions = ::Union::CreatePartialHook((void*)(zSwitch(0x00427993, 0x0042A48F, 0x00428EE5, 0x00429273)), &Game_ApplyOptions_Hook);
+	auto PartialHook_Game_ApplyOptions = ::Union::CreatePartialHook((void*)(zSwitch(0x00427993, 0x0042A48F, 0x00428EE4, 0x00429272)), &Game_ApplyOptions_Hook);
 }
