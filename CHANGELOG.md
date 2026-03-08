@@ -1,3 +1,6 @@
+[1.3.2]
+- Updated gothic-api and union-api
+
 [1.3.1]
 - Fix addresses for g2/g2a ApplySomeSettings partialhook
 
